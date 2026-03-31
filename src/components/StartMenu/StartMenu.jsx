@@ -40,13 +40,11 @@ export default function StartMenu({ onOpenApp, onClose, onShutdown }) {
 
   return (
     <div className={styles.menu} ref={menuRef}>
-      {/* Header with user */}
       <div className={styles.header}>
         <img src="/assets/user-photo.png" alt="" className={styles.avatar} draggable={false} />
         <span className={styles.headerName}>madugamer0412</span>
       </div>
 
-      {/* Body: left + right columns */}
       <div className={styles.body}>
         <div className={styles.leftCol}>
           {!showAllPrograms ? (
@@ -104,7 +102,6 @@ export default function StartMenu({ onOpenApp, onClose, onShutdown }) {
         </div>
       </div>
 
-      {/* Footer */}
       <div className={styles.footer}>
         <button className={styles.footerBtn} onClick={onShutdown}>
           <svg viewBox="0 0 16 16" width="16" height="16"><circle cx="8" cy="8" r="7" fill="none" stroke="#FFF" strokeWidth="1.5"/><line x1="8" y1="2" x2="8" y2="8" stroke="#FFF" strokeWidth="1.5"/></svg>

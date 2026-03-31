@@ -19,7 +19,6 @@
   font-family: 'Tahoma', sans-serif;
 }
 
-/* Start button - green pill */
 .startButton {
   display: flex;
   align-items: center;
@@ -78,7 +77,6 @@
   font-weight: bold;
 }
 
-/* Task list */
 .taskList {
   flex: 1;
   display: flex;
@@ -143,7 +141,6 @@
   text-overflow: ellipsis;
 }
 
-/* System tray */
 .systemTray {
   display: flex;
   align-items: center;

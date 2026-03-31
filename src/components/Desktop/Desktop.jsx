@@ -74,6 +74,7 @@ export default function Desktop({ onShutdown, onBsod }) {
   const [virusDialogs, setVirusDialogs] = useState([]);
   const [glitch, setGlitch] = useState(false);
   const virusTimer = useRef(null);
+  const errorSound = useRef(new Audio('/sounds/error-sound.mp3'));
 
   const recycleBinContextValue = useMemo(
     () => ({
@@ -84,10 +85,17 @@ export default function Desktop({ onShutdown, onBsod }) {
     [deletedItems]
   );
 
+  const playErrorSound = useCallback(() => {
+    const s = errorSound.current;
+    s.currentTime = 0;
+    s.play().catch(() => {});
+  }, []);
+
   const startVirus = useCallback(() => {
     setVirusStep(0);
     setVirusDialogs([{ ...virusMessages[0], id: 0, x: 120, y: 80 }]);
-  }, []);
+    playErrorSound();
+  }, [playErrorSound]);
 
   const handleVirusOk = useCallback(() => {
     setVirusStep((prev) => {
@@ -102,9 +110,9 @@ export default function Desktop({ onShutdown, onBsod }) {
             y: 80 + next * 25 + Math.random() * 30,
           },
         ]);
+        playErrorSound();
         return next;
       }
-      // after last dialog → glitch then BSOD
       setGlitch(true);
       virusTimer.current = setTimeout(() => {
         setGlitch(false);

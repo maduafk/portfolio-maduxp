@@ -5,7 +5,6 @@ export default function ContextMenu() {
   const [menu, setMenu] = useState(null);
 
   const handleContextMenu = useCallback((e) => {
-    // Only show on desktop background clicks
     if (e.target.closest('.window') || e.target.closest('[class*="taskbar"]') || e.target.closest('[class*="icon"]') || e.target.closest('[class*="startMenu"]') || e.target.closest('[class*="note"]') || e.target.closest('[class*="clippy"]')) {
       return;
     }
