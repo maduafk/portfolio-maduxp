@@ -1,0 +1,168 @@
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  display: flex;
+  align-items: stretch;
+  background: linear-gradient(180deg,
+    #245EDC 0%,
+    #3F8CF3 2%,
+    #245EDC 4%,
+    #1941A5 50%,
+    #1941A5 94%,
+    #1335A0 100%
+  );
+  z-index: 9999;
+  border-top: 1px solid #0C3D98;
+  font-family: 'Tahoma', sans-serif;
+}
+
+/* Start button - green pill */
+.startButton {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  height: 100%;
+  padding: 0 10px 0 3px;
+  border: none;
+  border-right: 1px solid rgba(0,0,0,0.15);
+  border-radius: 0 8px 8px 0;
+  background: linear-gradient(180deg,
+    #3C9A3C 0%,
+    #349A34 3%,
+    #2D8E2D 6%,
+    #288C28 50%,
+    #1E7B1E 54%,
+    #1E7B1E 94%,
+    #1A6E1A 100%
+  );
+  color: #FFF;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Tahoma', sans-serif;
+  font-size: 19px;
+  font-style: italic;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  letter-spacing: 0.5px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.startButton:hover {
+  background: linear-gradient(180deg,
+    #48B048 0%,
+    #40A840 3%,
+    #389C38 6%,
+    #349834 50%,
+    #2C8C2C 54%,
+    #288828 94%,
+    #247E24 100%
+  );
+}
+
+.startActive {
+  background: linear-gradient(180deg,
+    #1A6E1A 0%,
+    #1E7B1E 50%,
+    #1A6E1A 100%
+  ) !important;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.35) !important;
+}
+
+.startLogo {
+  width: 20px;
+  height: 20px;
+}
+
+.startLabel {
+  font-weight: bold;
+}
+
+/* Task list */
+.taskList {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0 4px;
+  overflow-x: auto;
+  min-width: 0;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 22px;
+  padding: 0 8px;
+  max-width: 160px;
+  min-width: 48px;
+  background: linear-gradient(180deg, #3C8EFF 0%, #2B6CD6 50%, #2060C0 100%);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 2px;
+  color: #FFF;
+  font-size: 11px;
+  cursor: pointer;
+  overflow: hidden;
+  font-family: 'Tahoma', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+}
+
+.taskItem:hover {
+  background: linear-gradient(180deg, #4FA0FF 0%, #3C80E8 50%, #3070D0 100%);
+}
+
+.taskActive {
+  background: linear-gradient(180deg, #1B4298 0%, #183A88 50%, #153278 100%) !important;
+  border-color: rgba(0,0,0,0.25) !important;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.35);
+}
+
+.taskIcon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.taskIcon img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.taskIcon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.taskTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* System tray */
+.systemTray {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
+  padding: 0 10px;
+  background: linear-gradient(180deg, #0E8FEF 0%, #0C7CD6 40%, #0A6CBD 100%);
+  border-left: 1px solid rgba(0,0,0,0.15);
+}
+
+.trayIcon {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.clock {
+  color: #FFF;
+  font-size: 11px;
+  font-family: 'Tahoma', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  white-space: nowrap;
+}

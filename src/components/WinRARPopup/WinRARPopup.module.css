@@ -1,0 +1,44 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.body {
+  display: flex;
+  gap: 16px;
+  padding: 16px 12px;
+  align-items: flex-start;
+}
+
+.icon {
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bold {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+}
+
+.text {
+  font-size: 11px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.small {
+  font-size: 10px;
+  color: #666;
+}

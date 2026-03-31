@@ -1,0 +1,972 @@
+.chrome {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #FFFFFF;
+}
+
+/* Tab bar */
+.tabBar {
+  display: flex;
+  align-items: flex-end;
+  background: #DEE1E6;
+  padding: 6px 6px 0;
+  gap: 1px;
+  flex-shrink: 0;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: #E8EAED;
+  border-radius: 8px 8px 0 0;
+  font-size: 11px;
+  cursor: pointer;
+  max-width: 180px;
+  min-width: 40px;
+  border: none;
+  font-family: inherit;
+  color: #5F6368;
+}
+
+.tab:hover { background: #F1F3F4; }
+
+.tab.tabActive {
+  background: #FFFFFF;
+  color: #202124;
+}
+
+.tabLabel {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.tabClose {
+  font-size: 10px;
+  color: #999;
+  flex-shrink: 0;
+}
+
+.tabNew {
+  padding: 4px 10px;
+  font-size: 16px;
+  color: #5F6368;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 50%;
+}
+
+.tabNew:hover { background: #E8EAED; }
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #DADCE0;
+  flex-shrink: 0;
+}
+
+.navBtns {
+  display: flex;
+  gap: 2px;
+}
+
+.navBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #5F6368;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.navBtn:hover { background: #F1F3F4; }
+
+.addressBar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #F1F3F4;
+  border-radius: 20px;
+  padding: 4px 12px;
+  gap: 6px;
+}
+
+.lockIcon { font-size: 12px; color: #5F6368; }
+.starIcon { font-size: 14px; color: #5F6368; cursor: pointer; }
+
+.addressInput {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-family: inherit;
+  color: #202124;
+}
+
+.menuBtn {
+  font-size: 16px;
+  color: #5F6368;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.menuBtn:hover { background: #F1F3F4; }
+
+/* Page content */
+.page {
+  flex: 1;
+  overflow-y: auto;
+  background: #FFFFFF;
+}
+
+/* === Retro Site === */
+.retroSite {
+  font-family: 'Tahoma', 'Verdana', sans-serif;
+  background: #FFF8DC;
+}
+
+.retroHeader {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(180deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
+  color: #FFD700;
+}
+
+.retroTitle {
+  font-size: 24px;
+  text-shadow: 2px 2px 0 #FF6600;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 2px 2px 0 #FF6600; }
+  to { text-shadow: 2px 2px 10px #FF6600, 0 0 20px #FFD700; }
+}
+
+.retroSubtitle {
+  font-size: 11px;
+  color: #AAAAFF;
+  margin-top: 4px;
+}
+
+.retroBadges {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.badge {
+  background: #333;
+  color: #FFD700;
+  padding: 3px 10px;
+  font-size: 10px;
+  border: 1px solid #FFD700;
+  border-radius: 2px;
+}
+
+.badgeVisitor {
+  background: #006400;
+  color: #00FF00;
+  padding: 3px 10px;
+  font-size: 10px;
+  border: 1px solid #00FF00;
+  border-radius: 2px;
+}
+
+.retroNav {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px;
+  background: #1A1A2E;
+  flex-wrap: wrap;
+}
+
+.navItem {
+  color: #FFFFFF;
+  font-size: 11px;
+  padding: 3px 10px;
+  cursor: pointer;
+  border: 1px solid #444;
+  border-radius: 2px;
+}
+
+.navItem:hover {
+  background: #FFD700;
+  color: #000;
+}
+
+.retroMarquee {
+  background: #FF6600;
+  padding: 4px 0;
+  overflow: hidden;
+}
+
+.marqueeContent {
+  white-space: nowrap;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: bold;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.retroContent {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+}
+
+.retroMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.retroSection { margin-bottom: 8px; }
+
+.retroWelcome {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.retroPhoto {
+  width: 80px;
+  height: 80px;
+  background: #E0E0E0;
+  border: 3px solid #FFD700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.retroWelcome h2 {
+  font-size: 14px;
+  color: #1A1A2E;
+  margin-bottom: 4px;
+}
+
+.retroWelcome p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.retroSectionBox {
+  border: 1px solid #CCC;
+  padding: 10px;
+  background: #FFFFF0;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  color: #0F3460;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.techBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.techBadge {
+  background: #1A1A2E;
+  color: #FFD700;
+  padding: 2px 8px;
+  font-size: 10px;
+  border-radius: 2px;
+}
+
+.retroText {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.projectItem {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 6px;
+  border: 1px dashed #CCC;
+}
+
+.projectIcon { font-size: 24px; }
+
+.projectItem strong {
+  font-size: 12px;
+  color: #0F3460;
+}
+
+.projectItem p {
+  font-size: 10px;
+  color: #666;
+}
+
+.retroSidebar {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.sideWidget {
+  border: 1px solid #CCC;
+  padding: 8px;
+  background: #F0F8FF;
+  font-size: 10px;
+}
+
+.sideWidget h4 {
+  font-size: 11px;
+  color: #0F3460;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 2px;
+}
+
+.sideWidget p {
+  color: #0000FF;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.counter {
+  background: #000;
+  color: #00FF00;
+  font-family: monospace;
+  font-size: 16px;
+  text-align: center;
+  padding: 4px;
+  letter-spacing: 4px;
+  margin: 4px 0;
+}
+
+.certBadge {
+  font-size: 9px;
+  color: #006400;
+  margin-top: 2px;
+  font-weight: bold;
+}
+
+.retroFooter {
+  text-align: center;
+  padding: 10px;
+  background: #1A1A2E;
+  color: #999;
+  font-size: 9px;
+}
+
+/* === Orkut === */
+.orkutPage { background: #E8EEF7; min-height: 100%; }
+
+.orkutHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 16px;
+  background: #FFFFFF;
+  border-bottom: 2px solid #6D84B4;
+}
+
+.orkutLogo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #E4405F;
+  font-style: italic;
+}
+
+.orkutHeaderRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.orkutNav {
+  font-size: 11px;
+  color: #315A8C;
+}
+
+.orkutNavSec {
+  font-size: 10px;
+  color: #999;
+}
+
+.orkutBody {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+}
+
+.orkutLeft {
+  width: 170px;
+  flex-shrink: 0;
+}
+
+.orkutProfile {
+  background: #FFFFFF;
+  padding: 10px;
+  border: 1px solid #C4CFE0;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.orkutProfile h3 {
+  font-size: 14px;
+  color: #315A8C;
+  margin-top: 6px;
+}
+
+.orkutProfile p {
+  font-size: 10px;
+  color: #666;
+}
+
+.orkutGender {
+  font-size: 10px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.orkutSideLinks {
+  background: #FFFFFF;
+  border: 1px solid #C4CFE0;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 10px;
+  color: #315A8C;
+}
+
+.orkutSideLinks p {
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.orkutSideLinks p:hover {
+  text-decoration: underline;
+}
+
+.orkutCenter {
+  flex: 1;
+  min-width: 0;
+  background: #FFFFFF;
+  border: 1px solid #C4CFE0;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.orkutStatsBar {
+  display: flex;
+  gap: 12px;
+  font-size: 10px;
+  color: #315A8C;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #E8EEF7;
+}
+
+.orkutTabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 8px;
+}
+
+.orkutTabActive {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #6D84B4;
+  color: #FFF;
+  font-size: 11px;
+  border-radius: 3px 3px 0 0;
+  cursor: pointer;
+}
+
+.orkutTabItem {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #D0D8E8;
+  color: #315A8C;
+  font-size: 11px;
+  border-radius: 3px 3px 0 0;
+  cursor: pointer;
+}
+
+.orkutTabItem:hover {
+  background: #C0C8D8;
+}
+
+.orkutRight {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.orkutFriendsBox {
+  background: #FFFFFF;
+  border: 1px solid #C4CFE0;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 6px;
+}
+
+.orkutFriendsBox h4 {
+  font-size: 11px;
+  color: #315A8C;
+  margin-bottom: 6px;
+}
+
+.orkutFriendsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+
+.orkutFriend {
+  text-align: center;
+  font-size: 9px;
+  color: #315A8C;
+}
+
+.orkutFriendAvatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 4px;
+  margin: 0 auto 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.orkutSeeAll {
+  font-size: 10px;
+  color: #315A8C;
+  text-align: center;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.orkutSeeAll:hover {
+  text-decoration: underline;
+}
+
+.orkutCommBox {
+  background: #FFFFFF;
+  border: 1px solid #C4CFE0;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.orkutCommBox h4 {
+  font-size: 11px;
+  color: #315A8C;
+  margin-bottom: 6px;
+}
+
+.orkutComm {
+  font-size: 10px;
+  color: #333;
+  padding: 3px 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.orkutComm:hover {
+  text-decoration: underline;
+}
+
+.orkutTable {
+  width: 100%;
+  font-size: 11px;
+  border-collapse: collapse;
+}
+
+.orkutTable td {
+  padding: 4px 8px;
+  border-bottom: 1px solid #E8EEF7;
+  vertical-align: top;
+}
+
+.orkutLabel {
+  font-weight: bold;
+  color: #666;
+  width: 100px;
+}
+
+.orkutSectionTitle {
+  font-size: 12px;
+  color: #315A8C;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  border-top: 1px solid #E8EEF7;
+  padding-top: 8px;
+}
+
+.orkutScrap {
+  padding: 6px;
+  background: #F8F8FF;
+  border: 1px solid #E8EEF7;
+  margin-bottom: 4px;
+  font-size: 11px;
+  border-radius: 3px;
+}
+
+.orkutScrap strong {
+  color: #315A8C;
+}
+
+.orkutScrap p {
+  margin-top: 2px;
+  color: #333;
+}
+
+/* === YouTube === */
+.ytPage { background: #F1F1F1; min-height: 100%; }
+
+.ytHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.ytLogo {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ytLogoBox {
+  color: #333;
+}
+
+.ytLogoTube {
+  background: #CC0000;
+  color: #FFF;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.ytHeaderLang {
+  font-size: 10px;
+  color: #666;
+  border: 1px solid #CCC;
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+
+.ytSearchBar {
+  flex: 1;
+  display: flex;
+  max-width: 350px;
+}
+
+.ytSearchInput {
+  flex: 1;
+  border: 1px solid #CCC;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+}
+
+.ytSearchBtn {
+  background: #F8F8F8;
+  border: 1px solid #CCC;
+  border-left: none;
+  padding: 4px 12px;
+  font-size: 11px;
+  cursor: pointer;
+  border-radius: 0 2px 2px 0;
+}
+
+.ytHeaderRight {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  color: #333;
+  margin-left: auto;
+}
+
+.ytHeaderUser {
+  font-weight: bold;
+}
+
+.ytNavBar {
+  display: flex;
+  gap: 16px;
+  padding: 4px 12px;
+  background: #F8F8F8;
+  border-bottom: 1px solid #E0E0E0;
+  font-size: 11px;
+  color: #666;
+}
+
+.ytNavActive {
+  color: #CC0000;
+  font-weight: bold;
+}
+
+.ytContent {
+  display: flex;
+  gap: 16px;
+  padding: 12px;
+}
+
+.ytMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.ytPlayer {
+  width: 100%;
+  height: 240px;
+  background: #000;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.ytPlayOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: rgba(255,255,255,0.8);
+  background: rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+
+.ytTitle {
+  font-size: 16px;
+  color: #030303;
+  margin-bottom: 4px;
+}
+
+.ytMeta {
+  font-size: 11px;
+  color: #606060;
+  margin-bottom: 8px;
+}
+
+.ytChannelRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  margin-bottom: 8px;
+}
+
+.ytChannelAvatar {
+  width: 36px;
+  height: 36px;
+  background: #CC0000;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ytChannelName {
+  font-size: 12px;
+  color: #030303;
+  display: block;
+}
+
+.ytChannelSub {
+  font-size: 10px;
+  color: #606060;
+}
+
+.ytChannelVideos {
+  margin-left: auto;
+  font-size: 10px;
+  color: #606060;
+}
+
+.ytActions {
+  display: flex;
+  gap: 14px;
+  font-size: 11px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.ytActions span {
+  cursor: pointer;
+}
+
+.ytActions span:hover {
+  color: #CC0000;
+}
+
+.ytSidebar {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.ytSideTitle {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.ytSuggestion {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.ytSuggestion:hover .ytSugTitle {
+  color: #CC0000;
+}
+
+.ytSugThumb {
+  width: 80px;
+  height: 50px;
+  background: #2C5F2D;
+  flex-shrink: 0;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ytSugNum {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(255,255,255,0.8);
+}
+
+.ytSugInfo {
+  min-width: 0;
+}
+
+.ytSugTitle {
+  font-size: 11px;
+  color: #030303;
+  font-weight: bold;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ytSugChannel {
+  font-size: 10px;
+  color: #606060;
+}
+
+.ytSugViews {
+  font-size: 10px;
+  color: #999;
+}
+
+/* === History === */
+.historyPage {
+  padding: 16px;
+}
+
+.historyTitle {
+  font-size: 18px;
+  color: #202124;
+  margin-bottom: 8px;
+}
+
+.historyDate {
+  font-size: 12px;
+  font-weight: bold;
+  color: #5F6368;
+  margin-bottom: 8px;
+}
+
+.historyItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid #F0F0F0;
+  font-size: 11px;
+}
+
+.historyTime {
+  color: #5F6368;
+  min-width: 40px;
+}
+
+.historyIcon {
+  font-size: 14px;
+}
+
+.historyInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.historyUrl {
+  color: #1A73E8;
+  font-size: 10px;
+}
+
+.historyPageTitle {
+  color: #202124;
+}

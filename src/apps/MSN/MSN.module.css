@@ -1,0 +1,475 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #FFFFFF;
+}
+
+.header {
+  background: linear-gradient(180deg, #4A9BD9 0%, #3B84C0 100%);
+  padding: 12px;
+}
+
+.myProfile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.myAvatar {
+  width: 48px;
+  height: 48px;
+  background: #D4D0C8;
+  border-radius: 4px;
+  border: 2px solid #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.myAvatarImg {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  border: 2px solid #FFF;
+  object-fit: cover;
+}
+
+.myName {
+  display: block;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.myStatus {
+  display: block;
+  color: rgba(255,255,255,0.8);
+  font-size: 10px;
+}
+
+.myAge {
+  display: block;
+  color: rgba(255,255,255,0.6);
+  font-size: 9px;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.statusSelect { display: flex; gap: 8px; }
+.statusOption { color: #FFF; font-size: 11px; cursor: pointer; }
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  padding: 6px 12px;
+  background: #F0F4F8;
+  border-bottom: 1px solid #CCC;
+  font-size: 16px;
+}
+
+.toolbar span { cursor: pointer; }
+
+.contactList {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 0;
+}
+
+.group { margin-bottom: 4px; }
+
+.groupTitle {
+  display: block;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #316AC5;
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 5px 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: left;
+  font-family: inherit;
+}
+
+.contact:hover { background: #E5F0FB; }
+
+.contactEmoji { font-size: 24px; }
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactName {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+}
+
+.contactStatus {
+  font-size: 10px;
+  color: #666;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 12px;
+  background: #F0F4F8;
+  border-top: 1px solid #CCC;
+  font-size: 10px;
+  color: #666;
+}
+
+/* Chat Window */
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #FFFFFF;
+}
+
+.chatHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: linear-gradient(180deg, #4A9BD9 0%, #3B84C0 100%);
+  color: #FFF;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  color: #FFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.chatName {
+  flex: 1;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.chatActions {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.chatActions span { cursor: pointer; }
+
+.chatBody {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+  background: #FFFFFF;
+}
+
+.chatWarning {
+  font-size: 10px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 8px;
+  padding: 4px;
+  background: #FFF8DC;
+  border-radius: 2px;
+}
+
+.msgMe, .msgThem {
+  margin-bottom: 6px;
+}
+
+.msgAuthor {
+  font-size: 10px;
+  color: #316AC5;
+  display: block;
+}
+
+.msgMe .msgAuthor { color: #006400; }
+
+.msgText {
+  font-size: 12px;
+  color: #000;
+}
+
+.nudgeMsg {
+  text-align: center;
+  font-size: 11px;
+  color: #888;
+  font-style: italic;
+  margin: 6px 0;
+  padding: 2px 0;
+}
+
+.chatInput {
+  border-top: 1px solid #CCC;
+  background: #F0F4F8;
+}
+
+.chatFormat {
+  display: flex;
+  gap: 8px;
+  padding: 4px 8px;
+  font-size: 11px;
+  color: #666;
+  border-bottom: 1px solid #DDD;
+}
+
+.chatInputRow {
+  display: flex;
+  padding: 6px 8px;
+  gap: 6px;
+}
+
+.input {
+  flex: 1;
+  padding: 4px 8px;
+  border: 1px solid #7F9DB9;
+  font-size: 12px;
+  outline: none;
+  font-family: inherit;
+}
+
+.sendBtn {
+  padding: 4px 16px;
+  background: var(--xp-gray-bg);
+  border: 2px outset var(--xp-gray-button);
+  font-size: 11px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.sendBtn:active { border-style: inset; }
+
+@keyframes msnShake {
+  0%, 100% { transform: translate(0, 0); }
+  5% { transform: translate(-6px, 3px); }
+  10% { transform: translate(6px, -3px); }
+  15% { transform: translate(-5px, -3px); }
+  20% { transform: translate(5px, 3px); }
+  25% { transform: translate(-4px, 2px); }
+  30% { transform: translate(4px, -2px); }
+  35% { transform: translate(-3px, -2px); }
+  40% { transform: translate(3px, 2px); }
+  45% { transform: translate(-2px, 1px); }
+  50% { transform: translate(2px, -1px); }
+  55% { transform: translate(-2px, 1px); }
+  60% { transform: translate(2px, -1px); }
+  65% { transform: translate(-1px, 1px); }
+  70% { transform: translate(1px, -1px); }
+}
+
+.shake {
+  animation: msnShake 0.6s ease-in-out;
+}
+
+.statusDropdown {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 2px;
+  border: 1px solid #2a6fa8;
+  background: #fff;
+  color: #000;
+  max-width: 160px;
+}
+
+.emojiPicker {
+  position: absolute;
+  bottom: 100%;
+  left: 8px;
+  margin-bottom: 4px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2px;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid #7F9DB9;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.emojiPickerBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 2px;
+  line-height: 1;
+}
+
+.emojiPickerBtn:hover {
+  background: #E5F0FB;
+}
+
+.chatFormatEmojiWrap {
+  position: relative;
+}
+
+.footerBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Webcam Popup */
+.webcamOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.webcamWindow {
+  width: 260px;
+  background: #ECE9D8;
+  border: 2px solid #0054E3;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+
+.webcamTitleBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 6px;
+  background: linear-gradient(180deg, #0A6AF1 0%, #0054E3 50%, #0544C0 100%);
+  color: #FFF;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.webcamClose {
+  background: none;
+  border: none;
+  color: #FFF;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.webcamClose:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 2px;
+}
+
+.webcamBody {
+  padding: 8px;
+}
+
+.webcamScreen {
+  width: 100%;
+  height: 160px;
+  background: #0A0A0A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+}
+
+.webcamX {
+  font-size: 28px;
+  color: #CC0000;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.webcamErrorText {
+  color: #CC0000;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.webcamVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+.webcamSub {
+  color: #888;
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.webcamFooter {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: #ECE9D8;
+  border-top: 1px solid #ACA899;
+  font-size: 10px;
+  color: #333;
+}
+
+.webcamDot {
+  color: #333;
+  font-size: 8px;
+}
+
+.webcamFooterRight {
+  margin-left: auto;
+  color: #666;
+}
+
+.footerBtn:hover {
+  color: #316AC5;
+}
+
+.webcamPanel {
+  height: 200px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.webcamVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.webcamClose {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.webcamErrorText {
+  color: #ccc;
+  font-size: 12px;
+  text-align: center;
+  padding: 8px;
+}

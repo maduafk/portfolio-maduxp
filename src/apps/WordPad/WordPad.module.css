@@ -1,0 +1,70 @@
+.container { display: flex; flex-direction: column; height: 100%; background: var(--xp-gray-bg); }
+.menuBar { display: flex; padding: 2px 4px; background: var(--xp-gray-bg); border-bottom: 1px solid #A0A0A0; }
+.menuItem { padding: 2px 8px; font-size: 11px; cursor: pointer; border-radius: 2px; }
+.menuItem:hover { background: #316AC5; color: #FFFFFF; }
+.toolbar { display: flex; align-items: center; gap: 4px; padding: 3px 6px; background: var(--xp-gray-bg); border-bottom: 1px solid #A0A0A0; flex-wrap: wrap; }
+.toolIcon { font-size: 14px; cursor: pointer; padding: 2px; }
+.toolSep { width: 1px; height: 18px; background: #A0A0A0; margin: 0 2px; }
+.fontSelect { font-size: 11px; padding: 1px; border: 1px solid #7F9DB9; }
+.sizeSelect { font-size: 11px; padding: 1px; width: 42px; border: 1px solid #7F9DB9; }
+.toolBtn { padding: 1px 4px; font-size: 12px; cursor: pointer; border: 1px solid transparent; border-radius: 2px; }
+.toolBtn:hover { border-color: #316AC5; background: #E8F0FE; }
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 30px 40px;
+  background: #FFFFFF;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.cvHeader {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #000;
+}
+
+.cvHeader h1 { font-size: 20px; margin-bottom: 4px; }
+.cvHeader p { font-size: 11px; color: #333; }
+
+.cvSection { margin-bottom: 16px; }
+.cvSection h2 {
+  font-size: 13px;
+  color: #000;
+  border-bottom: 1px solid #333;
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cvEntry {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.cvEntry strong { font-size: 12px; }
+.cvDate { float: right; font-size: 11px; color: #666; font-style: italic; }
+.cvRole { color: #316AC5; font-weight: bold; font-size: 11px; margin-bottom: 4px; }
+
+.cvEntry ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 11px;
+}
+
+.cvEntry li { margin-bottom: 2px; }
+.cvSection p { font-size: 11px; }
+
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 8px;
+  background: var(--xp-gray-bg);
+  border-top: 1px solid #A0A0A0;
+  font-size: 11px;
+  color: #333;
+}

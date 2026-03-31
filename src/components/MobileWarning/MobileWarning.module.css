@@ -1,0 +1,57 @@
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  background: #3A6EA5;
+  align-items: center;
+  justify-content: center;
+  font-family: Tahoma, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    display: flex;
+  }
+}
+
+.window {
+  background: #ECE9D8;
+  border: 2px solid #0054E3;
+  border-radius: 8px;
+  padding: 32px 24px;
+  max-width: 340px;
+  text-align: center;
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.4);
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 16px;
+  color: #003399;
+  margin: 0 0 12px;
+}
+
+.text {
+  font-size: 12px;
+  color: #333;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.hint {
+  font-size: 11px;
+  color: #666;
+  margin: 0 0 16px;
+}
+
+.footer {
+  padding-top: 12px;
+  border-top: 1px solid #A0A0A0;
+  font-size: 10px;
+  color: #808080;
+}

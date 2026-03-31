@@ -1,0 +1,36 @@
+.windowPos {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.opening {
+  animation: windowOpen 0.15s ease-out;
+}
+
+.closing {
+  animation: windowClose 0.12s ease-in forwards;
+}
+
+.minimizing {
+  animation: windowMinimize 0.2s ease-in forwards;
+}
+
+@keyframes windowOpen {
+  from { transform: scale(0.94); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes windowClose {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(0.94); opacity: 0; }
+}
+
+@keyframes windowMinimize {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(0.1) translateY(100vh); opacity: 0; }
+}
+
+.maximized {
+  border-radius: 0 !important;
+}

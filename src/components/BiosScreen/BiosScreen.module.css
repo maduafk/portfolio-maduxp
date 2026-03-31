@@ -1,0 +1,53 @@
+.bios {
+  width: 100vw;
+  height: 100vh;
+  background: #0C1628;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Courier New', 'Lucida Console', monospace;
+  color: #AAAAAA;
+}
+
+.logoArea {
+  padding: 24px 32px 16px;
+}
+
+.amiLogo {
+  height: 56px;
+  width: auto;
+}
+
+.content {
+  flex: 1;
+  padding: 4px 24px;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+.line {
+  white-space: pre;
+  min-height: 1.1em;
+}
+
+.hlYellow {
+  color: #FFFF55;
+  font-weight: bold;
+}
+
+.hlGreen {
+  color: #55FF55;
+  font-weight: bold;
+}
+
+.cursor {
+  display: inline-block;
+  color: #AAAAAA;
+  animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

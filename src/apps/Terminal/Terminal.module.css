@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #0C0C0C;
+  cursor: text;
+}
+
+.output {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+  font-family: 'Lucida Console', 'Consolas', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.35;
+  color: #C0C0C0;
+}
+
+.line {
+  white-space: pre-wrap;
+  word-break: break-all;
+  min-height: 1em;
+}
+
+.inputLine {
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  color: #C0C0C0;
+  white-space: pre;
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #C0C0C0;
+  font-family: 'Lucida Console', 'Consolas', 'Courier New', monospace;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  caret-color: #C0C0C0;
+}
+
+.input::selection {
+  background: #264F78;
+}
+
+.output::-webkit-scrollbar {
+  width: 14px;
+}
+
+.output::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+.output::-webkit-scrollbar-thumb {
+  background: #555;
+  border: 2px solid #1A1A1A;
+}

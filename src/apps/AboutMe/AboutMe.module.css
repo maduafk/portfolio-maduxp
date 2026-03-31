@@ -1,0 +1,66 @@
+.container {
+  flex: 1;
+  padding: 4px;
+}
+
+.topSection {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+.topSection hr {
+  height: 60px;
+  border: none;
+  border-left: 1px solid #ACA899;
+}
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.brand small {
+  font-size: 9px;
+  color: #666;
+}
+
+.winLabel {
+  font-family: 'Franklin Gothic Medium', 'Tahoma', sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+.winLabel em {
+  font-style: italic;
+  font-weight: bold;
+  color: #FF6600;
+  font-size: 20px;
+}
+
+.info {
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.toast {
+  position: fixed;
+  bottom: 48px;
+  right: 24px;
+  z-index: 10001;
+  padding: 6px 12px;
+  background: #ffffe1;
+  border: 1px solid #000;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+  font-size: 11px;
+}

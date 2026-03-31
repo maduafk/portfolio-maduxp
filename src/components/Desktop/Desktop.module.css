@@ -1,0 +1,107 @@
+.desktop {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: url('/bliss.png') center center / cover no-repeat;
+  background-color: #3A6EA5;
+}
+
+/* Glitch effect */
+.glitch {
+  animation: virusGlitch 0.15s infinite;
+}
+
+@keyframes virusGlitch {
+  0%   { filter: none; transform: translate(0); }
+  20%  { filter: hue-rotate(90deg) saturate(3); transform: translate(-3px, 2px); }
+  40%  { filter: invert(1); transform: translate(2px, -1px) skewX(2deg); }
+  60%  { filter: hue-rotate(200deg) brightness(1.5); transform: translate(-1px, 3px) skewX(-1deg); }
+  80%  { filter: saturate(5) contrast(2); transform: translate(3px, -2px); }
+  100% { filter: invert(1) hue-rotate(45deg); transform: translate(-2px, 1px) skewY(1deg); }
+}
+
+/* Virus XP dialog */
+.virusDialog {
+  position: absolute;
+  width: 370px;
+  background: #ECE9D8;
+  border: 2px solid #0054E3;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5), inset 0 0 0 1px #fff;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 11px;
+  user-select: none;
+}
+
+.virusDialogTitlebar {
+  background: linear-gradient(180deg, #0997FF 0%, #0054E3 100%);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.virusDialogClose {
+  background: linear-gradient(180deg, #E08356 0%, #C23A1A 100%);
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: white;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.virusDialogBody {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;
+}
+
+.virusDialogIcon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.virusDialogBody p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.virusDialogButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px 14px;
+}
+
+.virusDialogButtons button {
+  min-width: 75px;
+  padding: 2px 15px;
+  font-size: 11px;
+  font-family: 'Tahoma', sans-serif;
+  background: linear-gradient(180deg, #fff 0%, #ECE9D8 100%);
+  border: 1px solid #003C74;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.virusDialogButtons button:hover {
+  background: linear-gradient(180deg, #fff 0%, #D6D2C2 100%);
+}
+
+.virusDialogButtons button:active {
+  background: #D4D0C8;
+  border-style: inset;
+}

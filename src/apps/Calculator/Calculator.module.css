@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--xp-gray-bg, #ECE9D8);
+  padding: 2px;
+}
+
+.menuBar {
+  display: flex;
+  padding: 2px 4px;
+  gap: 0;
+  margin-bottom: 4px;
+}
+
+.menuItem {
+  padding: 2px 8px;
+  font-size: 11px;
+  cursor: pointer;
+  border-radius: 2px;
+  min-width: 0 !important;
+}
+
+.menuItem:hover {
+  background: #316AC5;
+  color: #FFFFFF;
+}
+
+.display {
+  background: #FFFFFF;
+  border: 2px inset #808080;
+  padding: 4px 8px;
+  font-size: 20px;
+  text-align: right;
+  font-family: 'Lucida Console', monospace;
+  margin: 0 4px 4px;
+  min-height: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 36px);
+  gap: 2px;
+  padding: 4px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 4px 2px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 2px outset var(--xp-gray-button, #D4D0C8);
+  background: var(--xp-gray-bg, #ECE9D8);
+  font-family: 'Tahoma', sans-serif;
+  height: 26px;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  width: 100%;
+}
+
+.btn:active {
+  border-style: inset;
+}
+
+.numBtn {
+  background: #FFFFFF;
+  font-weight: bold;
+}
+
+.equalsBtn {
+  background: #D4D0C8;
+  font-weight: bold;
+  color: #316AC5;
+}
+
+.opBtn {
+  background: #ECE9D8;
+}

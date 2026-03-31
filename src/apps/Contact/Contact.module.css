@@ -1,0 +1,35 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-bottom: 1px solid #ACA899;
+  background: #ECE9D8;
+  flex-shrink: 0;
+}
+
+.sentBanner {
+  padding: 6px 10px;
+  background: #DFF0D8;
+  color: #3C763D;
+  border-bottom: 1px solid #B4D9A4;
+  font-size: 11px;
+}
+
+.messageArea {
+  flex: 1;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 6px;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 11px;
+  background: #FFF;
+  color: #000;
+  margin: 0;
+}

@@ -1,0 +1,40 @@
+:root {
+  --xp-gray-bg: #ECE9D8;
+  --xp-gray-button: #D4D0C8;
+  --xp-gray-border-light: #FFFFFF;
+  --xp-gray-border-dark: #ACA899;
+  --xp-blue-dark: #0054E3;
+  --xp-blue-light: #0997FF;
+  --xp-text-color: #000000;
+  --xp-text-white: #FFFFFF;
+  --xp-text-link: #0066CC;
+  --xp-selection-bg: #316AC5;
+  --xp-selection-text: #FFFFFF;
+  --xp-window-body: #ECE9D8;
+}
+
+::selection {
+  background: var(--xp-selection-bg);
+  color: var(--xp-selection-text);
+}
+
+body, html {
+  font-family: 'Tahoma', 'Segoe UI', Geneva, Verdana, sans-serif;
+}
+
+*, *::before, *::after {
+  cursor: url('/cursors/default_arrow.cur'), auto !important;
+}
+
+a, button, [role="button"], input[type="submit"], select, .clickable,
+[onclick], [tabindex] {
+  cursor: url('/cursors/default_link.cur'), pointer !important;
+}
+
+input[type="text"], input[type="password"], textarea, [contenteditable="true"] {
+  cursor: url('/cursors/default_beam.cur'), text !important;
+}
+
+.wait, .loading {
+  cursor: url('/cursors/default_busy.cur'), wait !important;
+}
