@@ -6,7 +6,7 @@ function buildInitialCvHtml(s) {
 <div class="${s.cvHeader}">
   <h1>Maria Eduarda Silva Viana</h1>
   <p>Goiânia - GO · softwaremadu@gmail.com</p>
-  <p>github.com/maduafk · linkedin.com/in/maria-eduarda-viana-bb271723a</p>
+  <p>github.com/maduafk · www.linkedin.com/in/madu-viana</p>
 </div>
 
 <div class="${s.cvSection}">

@@ -189,7 +189,7 @@ export default function AboutMe() {
         </article>
 
         <div className="field-row" style={{ justifyContent: 'flex-end', marginTop: 8 }}>
-          <button type="button" onClick={() => window.open('https://www.linkedin.com/in/maria-eduarda-viana-bb271723a/', '_blank')}>
+          <button type="button" onClick={() => window.open('https://www.linkedin.com/in/madu-viana/', '_blank')}>
             LinkedIn
           </button>
           <button type="button" onClick={() => window.open('https://github.com/maduafk', '_blank')}>

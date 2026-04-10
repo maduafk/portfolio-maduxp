@@ -65,7 +65,7 @@ Use "start [número]" para mais detalhes.`,
 ━━━━━━━━
 Email:    softwaremadu@gmail.com
 GitHub:   github.com/maduafk
-LinkedIn: linkedin.com/in/maria-eduarda-viana-bb271723a
+LinkedIn: www.linkedin.com/in/madu-viana
 
 Fique à vontade para entrar em contato! :)`,
 
@@ -73,7 +73,7 @@ Fique à vontade para entrar em contato! :)`,
 [REDES SOCIAIS]
 ━━━━━━━━━━━━━━
 GitHub:   https://github.com/maduafk
-LinkedIn: https://www.linkedin.com/in/maria-eduarda-viana-bb271723a/`,
+LinkedIn: https://www.linkedin.com/in/madu-viana/`,
 
   exp: () => `
 [EXPERIÊNCIA PROFISSIONAL]

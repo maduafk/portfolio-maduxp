@@ -113,7 +113,7 @@ function RetroSite() {
             <h3 className={styles.sectionTitle}>&gt;&gt; CONTATO</h3>
             <p>E-mail: softwaremadu@gmail.com</p>
             <p>GitHub: github.com/maduafk</p>
-            <p>LinkedIn: linkedin.com/in/maria-eduarda-viana-bb271723a</p>
+            <p>LinkedIn: www.linkedin.com/in/madu-viana</p>
           </div>
         </div>
 

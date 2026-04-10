@@ -49,7 +49,7 @@ de quem eu sou hoje. Esse portfolio é uma homenagem a essa
 === Contato ===
 Email:    softwaremadu@gmail.com
 GitHub:   github.com/maduafk
-LinkedIn: linkedin.com/in/maria-eduarda-viana-bb271723a
+LinkedIn: www.linkedin.com/in/madu-viana
 
 ---
 Feito com React, Vite e muita nostalgia do Windows XP ♡`;
