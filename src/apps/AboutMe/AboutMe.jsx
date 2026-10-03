@@ -56,14 +56,14 @@ export default function AboutMe() {
               />
               <div className={styles.brand}>
                 <small>Maria Eduarda Silva Viana</small>
-                <span className={styles.winLabel}>Dev Java<em> Jr</em></span>
+                <span className={styles.winLabel}>Eng. Software<em> Jr</em></span>
                 <small>Engenharia de Software</small>
               </div>
             </div>
             <hr />
             <div className={styles.info}>
               <p><strong>Maria Eduarda Silva Viana</strong></p>
-              <p>Desenvolvedora Java Júnior</p>
+              <p>Engenheira de Software Júnior</p>
               <br />
               <p>Portfolio v1.1 — madugamer0412</p>
               <p>Build 2026.10.03</p>
@@ -73,7 +73,7 @@ export default function AboutMe() {
           <fieldset>
             <legend>Sobre Mim</legend>
             <p style={{marginBottom: 8}}>
-              Desenvolvedora de Software com experiência em sistemas em produção, APIs REST,
+              Engenheira de Software Júnior com experiência em sistemas em produção, APIs REST,
               correção de bugs e bancos relacionais. Java e Spring Boot em projetos, testes
               unitários, Docker e integração de serviços. Disponível para vaga júnior.
             </p>
@@ -110,7 +110,7 @@ export default function AboutMe() {
           aria-labelledby="tab-trigger-hardware"
         >
           <fieldset>
-            <legend>Avalara (12/2024 – 07/2026)</legend>
+            <legend>Avalara (12/2024 – 05/2026)</legend>
             <p style={{ fontSize: 11, marginBottom: 6 }}>Estágio em Engenharia de Software — Remoto · Concluído</p>
             <ul style={{ fontSize: 11, margin: 0, paddingLeft: 16, lineHeight: 1.6 }}>
               <li>Sistemas em produção: correção de bugs críticos e melhorias contínuas</li>

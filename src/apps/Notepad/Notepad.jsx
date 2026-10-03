@@ -24,11 +24,11 @@ de gestão fiscal. Fiquei de julho a dezembro de 2024, em sistemas
 de NFe, APIs REST e banco de dados.
 
 A empresa foi comprada pela Avalara e eu continuei o estágio lá,
-de dezembro de 2024 até julho de 2026. Foi onde eu mais evoluí:
+de dezembro de 2024 até maio de 2026. Foi onde eu mais evoluí:
 Java, APIs, interfaces com Angular, Docker, Jira, testes e inglês
 no dia a dia.
 
-O estágio acabou em julho de 2026. Agora to procurando uma vaga
+O estágio acabou em maio de 2026. Agora to procurando uma vaga
 júnior. Me sinto preparada pra essa próxima etapa!
 
 === Por que Windows XP? ===

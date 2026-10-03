@@ -17,7 +17,7 @@ function RetroSite() {
     <div className={styles.retroSite}>
       <div className={styles.retroHeader}>
         <h1 className={styles.retroTitle}>★ Maria Eduarda Viana ★</h1>
-        <p className={styles.retroSubtitle}>Dev Java Jr · Eng. de Software · maduviana.com.br</p>
+        <p className={styles.retroSubtitle}>Engenheira de Software Júnior · maduviana.com.br</p>
         <div className={styles.retroBadges}>
           <span className={styles.badge}>★★★★★</span>
           <span className={styles.badge}>TOP DEVELOPER</span>
@@ -49,7 +49,7 @@ function RetroSite() {
               <div>
                 <h2>Bem-vindo ao meu site!</h2>
                 <p>
-                  Oii! Sou a <strong>Maria Eduarda</strong>, Dev Java Júnior.
+                  Oii! Sou a <strong>Maria Eduarda</strong>, Engenheira de Software Júnior.
                   Cursando Eng. de Software na Faculdade Alfredo Nasser (conclusão em dez/2026).
                   Apaixonada por tecnologia, games e café!
                 </p>
@@ -69,8 +69,8 @@ function RetroSite() {
           <div className={styles.retroSectionBox} id="chrome-retro-sobre">
             <h3 className={styles.sectionTitle}>&gt;&gt; SOBRE MIM</h3>
             <p className={styles.retroText}>
-              Desenvolvedora Java Júnior com experiência em sistemas em produção, APIs REST,
-              Angular, PostgreSQL e Oracle. Estágio na Avalara concluído em julho de 2026
+              Engenheira de Software Júnior com experiência em sistemas em produção, APIs REST,
+              Angular, PostgreSQL e Oracle. Estágio na Avalara concluído em maio de 2026
               e na Oobj em dezembro de 2024. Cursando Engenharia de Software na Faculdade
               Alfredo Nasser, com conclusão prevista para dezembro de 2026. Disponível para
               vaga júnior. Inglês intermediário-avançado.
@@ -187,7 +187,7 @@ function OrkutPage() {
               <tr><td className={styles.orkutLabel}>sobre mim:</td><td>dev por profissão, gamer nas horas vagas. gosto de café, joguinho e ficar até tarde na internet sem motivo nenhum.</td></tr>
               <tr><td className={styles.orkutLabel}>humor:</td><td>aleatória, memes e kkkkk</td></tr>
               <tr><td className={styles.orkutLabel}>paixões:</td><td>café, código, jogos, música</td></tr>
-              <tr><td className={styles.orkutLabel}>profissão:</td><td>dev java júnior</td></tr>
+              <tr><td className={styles.orkutLabel}>profissão:</td><td>engenheira de software júnior</td></tr>
               <tr><td className={styles.orkutLabel}>estuda em:</td><td>Faculdade Alfredo Nasser - Eng. Software</td></tr>
               <tr><td className={styles.orkutLabel}>moda:</td><td>casual, moletom e tênis</td></tr>
               <tr><td className={styles.orkutLabel}>esportes:</td><td>nenhum (só assisto)</td></tr>

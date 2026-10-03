@@ -20,7 +20,7 @@ const initialFolders = {
       { name: 'api-rest-typescript', type: 'folder', icon: '📁', desc: 'Node.js / Express', status: '🟢 Concluído' },
       { name: 'app-android-estudos', type: 'folder', icon: '📁', desc: 'Kotlin / Firebase', status: '🟢 Concluído' },
       { name: 'api-rest-java', type: 'folder', icon: '📁', desc: 'Spring Boot / SQL', status: '🟢 Concluído' },
-      { name: 'colaboracoes-avalara', type: 'folder', icon: '📁', desc: 'Java / Angular', status: '🔒 Encerrado jul/2026' },
+      { name: 'colaboracoes-avalara', type: 'folder', icon: '📁', desc: 'Java / Angular', status: '🔒 Encerrado mai/2026' },
       { name: 'colaboracoes-oobj', type: 'folder', icon: '📁', desc: 'Java / Fiscal', status: '🔒 Encerrado dez/2024' },
       { name: 'docker-compose.yml', type: 'file', icon: '🐳', size: '1 KB', date: '29/03/2026' },
     ],

@@ -22,7 +22,7 @@ Comandos disponíveis:
 ╠═══════════════════════════════════════════╣
 ║  Nome:      Maria Eduarda Silva Viana     ║
 ║  Nick:      madugamer0412                 ║
-║  Cargo:     Dev Java Júnior               ║
+║  Cargo:     Engenheira de Software Júnior ║
 ║  Local:     Goiânia - GO, Brasil          ║
 ║  Formação:  Eng. Software (dez/2026)      ║
 ║  Faculdade: Faculdade Alfredo Nasser        ║
@@ -55,7 +55,7 @@ IA:        Cursor      ████████░░ 85%`,
 1. Portfolio Madu           - React / Vite (este!)
 2. API REST - Java         - Spring Boot / SQL
 3. API - TypeScript        - Node.js / PostgreSQL
-4. Avalara                 - estágio encerrado em 07/2026
+4. Avalara                 - estágio encerrado em 05/2026
 5. Oobj                    - estágio encerrado em 12/2024
 
 Use "start [número]" para mais detalhes.`,
@@ -81,7 +81,7 @@ LinkedIn: https://www.linkedin.com/in/madu-viana/`,
 [EXPERIÊNCIA PROFISSIONAL]
 ━━━━━━━━━━━━━━━━━━━━━━━━━
 
-> Avalara | Remoto (12/2024 - 07/2026) — concluído
+> Avalara | Remoto (12/2024 - 05/2026) — concluído
   Estágio em Engenharia de Software
   • Sistemas em produção, bugs críticos e melhorias
   • APIs REST e interfaces com Angular e JavaScript
@@ -133,7 +133,7 @@ Destaque:  Projeto acadêmico.`,
 Stack:     Java, Angular, JavaScript, Docker, Jira
 Descrição: APIs REST, interfaces web e correção de
            bugs em sistemas em produção.
-Obs:       Estágio concluído em jul/2026. Código privado.`,
+Obs:       Estágio concluído em mai/2026. Código privado.`,
   5: `
 [Projeto 5] Oobj
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

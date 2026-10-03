@@ -5,14 +5,14 @@ function buildInitialCvHtml(s) {
   return `
 <div class="${s.cvHeader}">
   <h1>Maria Eduarda Silva Viana</h1>
-  <p>Desenvolvedora Java Júnior · Goiânia - GO</p>
+  <p>Engenheira de Software Júnior · Goiânia - GO</p>
   <p>softwaremadu@gmail.com · (62) 99240-7797</p>
   <p>maduviana.com.br · github.com/maduafk · linkedin.com/in/madu-viana</p>
 </div>
 
 <div class="${s.cvSection}">
   <h2>Perfil</h2>
-  <p>Desenvolvedora de Software com experiência em sistemas em produção, APIs REST, correção de bugs e bancos de dados relacionais. Java e Spring Boot aplicados em projetos, testes unitários, Docker e integração de serviços. Busco uma vaga júnior.</p>
+  <p>Engenheira de Software Júnior com experiência em sistemas em produção, APIs REST, correção de bugs e bancos de dados relacionais. Java e Spring Boot aplicados em projetos, testes unitários, Docker e integração de serviços. Busco uma vaga júnior.</p>
 </div>
 
 <div class="${s.cvSection}">
@@ -26,7 +26,7 @@ function buildInitialCvHtml(s) {
 <div class="${s.cvSection}">
   <h2>Experiência Profissional</h2>
   <div class="${s.cvEntry}">
-    <strong>Avalara</strong> <span class="${s.cvDate}">Dez/2024 – Jul/2026</span>
+    <strong>Avalara</strong> <span class="${s.cvDate}">Dez/2024 – Mai/2026</span>
     <p class="${s.cvRole}">Estagiária de Engenharia de Software — Remoto (concluído)</p>
     <ul>
       <li>Atuação em sistemas em produção, com correção de bugs críticos e melhorias contínuas</li>
