@@ -18,6 +18,7 @@ const skillCategories = [
     icon: '🖥️',
     skills: [
       { name: 'JavaScript', level: 55 },
+      { name: 'Angular', level: 50 },
       { name: 'React', level: 50 },
       { name: 'HTML/CSS', level: 65 },
     ],
@@ -37,7 +38,7 @@ const skillCategories = [
     skills: [
       { name: 'Git', level: 70 },
       { name: 'Docker', level: 45 },
-      { name: 'AWS (S3/SQS/SES)', level: 35 },
+      { name: 'Jira', level: 50 },
       { name: 'JUnit / SonarQube', level: 45 },
     ],
   },
@@ -45,8 +46,7 @@ const skillCategories = [
     category: 'Ferramentas IA',
     icon: '🤖',
     skills: [
-      { name: 'Cursor AI', level: 70 },
-      { name: 'Amazon Q', level: 50 },
+      { name: 'Cursor', level: 70 },
     ],
   },
   {
@@ -55,7 +55,7 @@ const skillCategories = [
     skills: [
       { name: 'JMS / ActiveMQ', level: 40 },
       { name: 'Kotlin / Android', level: 30 },
-      { name: 'Inglês (B2)', level: 60 },
+      { name: 'Inglês (int-avanç.)', level: 60 },
     ],
   },
 ];

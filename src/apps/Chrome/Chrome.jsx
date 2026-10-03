@@ -17,7 +17,7 @@ function RetroSite() {
     <div className={styles.retroSite}>
       <div className={styles.retroHeader}>
         <h1 className={styles.retroTitle}>★ Maria Eduarda Viana ★</h1>
-        <p className={styles.retroSubtitle}>Dev Software Jr · Eng. de Software · madugamer0412</p>
+        <p className={styles.retroSubtitle}>Dev Java Jr · Eng. de Software · maduviana.com.br</p>
         <div className={styles.retroBadges}>
           <span className={styles.badge}>★★★★★</span>
           <span className={styles.badge}>TOP DEVELOPER</span>
@@ -49,8 +49,8 @@ function RetroSite() {
               <div>
                 <h2>Bem-vindo ao meu site!</h2>
                 <p>
-                  Oii! Sou a <strong>Maria Eduarda</strong>, Dev de Software Júnior.
-                  Cursando Eng. de Software na Faculdade Alfredo Nasser (formando em 2026).
+                  Oii! Sou a <strong>Maria Eduarda</strong>, Dev Java Júnior.
+                  Cursando Eng. de Software na Faculdade Alfredo Nasser (conclusão em dez/2026).
                   Apaixonada por tecnologia, games e café!
                 </p>
               </div>
@@ -60,7 +60,7 @@ function RetroSite() {
           <div className={styles.retroSectionBox} id="chrome-retro-tech">
             <h3 className={styles.sectionTitle}>&gt;&gt; PRINCIPAIS TECNOLOGIAS</h3>
             <div className={styles.techBadges}>
-              {['Java', 'Spring Boot', 'APIs REST', 'JavaScript', 'React', 'TypeScript', 'Node.js', 'SQL', 'PostgreSQL', 'Docker', 'AWS', 'Git', 'Cursor AI'].map(t => (
+              {['Java', 'Spring Boot', 'Angular', 'APIs REST', 'JavaScript', 'React', 'TypeScript', 'Node.js', 'SQL', 'PostgreSQL', 'Docker', 'Git', 'JUnit'].map(t => (
                 <span key={t} className={styles.techBadge}>{t}</span>
               ))}
             </div>
@@ -69,9 +69,11 @@ function RetroSite() {
           <div className={styles.retroSectionBox} id="chrome-retro-sobre">
             <h3 className={styles.sectionTitle}>&gt;&gt; SOBRE MIM</h3>
             <p className={styles.retroText}>
-              Desenvolvedora de Software Júnior com experiência em Java, APIs REST,
-              PostgreSQL, Oracle e AWS. Cursando Engenharia de Software na Faculdade
-              Alfredo Nasser, com previsão de conclusão em 2026. Inglês intermediário alto (B2).
+              Desenvolvedora Java Júnior com experiência em sistemas em produção, APIs REST,
+              Angular, PostgreSQL e Oracle. Estágio na Avalara concluído em julho de 2026
+              e na Oobj em dezembro de 2024. Cursando Engenharia de Software na Faculdade
+              Alfredo Nasser, com conclusão prevista para dezembro de 2026. Disponível para
+              vaga júnior. Inglês intermediário-avançado.
             </p>
           </div>
 
@@ -95,13 +97,6 @@ function RetroSite() {
               <div className={styles.projectItem}>
                 <span className={styles.projectIcon}>[*]</span>
                 <div>
-                  <strong>App Android - Estudos</strong>
-                  <p>Kotlin, Firebase, Android Studio</p>
-                </div>
-              </div>
-              <div className={styles.projectItem}>
-                <span className={styles.projectIcon}>[*]</span>
-                <div>
                   <strong>API REST - TypeScript</strong>
                   <p>Node.js, Express, PostgreSQL</p>
                 </div>
@@ -112,8 +107,10 @@ function RetroSite() {
           <div className={styles.retroSectionBox} id="chrome-retro-contato">
             <h3 className={styles.sectionTitle}>&gt;&gt; CONTATO</h3>
             <p>E-mail: softwaremadu@gmail.com</p>
+            <p>Celular: (62) 99240-7797</p>
+            <p>Site: maduviana.com.br</p>
             <p>GitHub: github.com/maduafk</p>
-            <p>LinkedIn: www.linkedin.com/in/madu-viana</p>
+            <p>LinkedIn: linkedin.com/in/madu-viana</p>
           </div>
         </div>
 
@@ -190,7 +187,7 @@ function OrkutPage() {
               <tr><td className={styles.orkutLabel}>sobre mim:</td><td>dev por profissão, gamer nas horas vagas. gosto de café, joguinho e ficar até tarde na internet sem motivo nenhum.</td></tr>
               <tr><td className={styles.orkutLabel}>humor:</td><td>aleatória, memes e kkkkk</td></tr>
               <tr><td className={styles.orkutLabel}>paixões:</td><td>café, código, jogos, música</td></tr>
-              <tr><td className={styles.orkutLabel}>profissão:</td><td>dev de software júnior</td></tr>
+              <tr><td className={styles.orkutLabel}>profissão:</td><td>dev java júnior</td></tr>
               <tr><td className={styles.orkutLabel}>estuda em:</td><td>Faculdade Alfredo Nasser - Eng. Software</td></tr>
               <tr><td className={styles.orkutLabel}>moda:</td><td>casual, moletom e tênis</td></tr>
               <tr><td className={styles.orkutLabel}>esportes:</td><td>nenhum (só assisto)</td></tr>

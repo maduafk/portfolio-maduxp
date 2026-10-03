@@ -1,0 +1,46 @@
+.container {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+}
+
+.stage {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  background: #000;
+}
+
+.player {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.status {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c8c8c8;
+  font-family: Tahoma, sans-serif;
+  font-size: 12px;
+  padding: 16px;
+  text-align: center;
+  background: #000;
+}
+
+.hint {
+  flex: none;
+  padding: 4px 8px;
+  background: #111;
+  color: #d0d0d0;
+  font-family: Tahoma, sans-serif;
+  font-size: 11px;
+  border-top: 1px solid #333;
+}

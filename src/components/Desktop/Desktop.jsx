@@ -42,7 +42,7 @@ function VirusDialog({ dialog, onOk, style }) {
 const desktopApps = [
   'chrome', 'wordpad', 'mediaplayer', 'about', 'explorer',
   'notepad', 'virusbat', 'msn', 'paint', 'skills',
-  'minesweeper', 'limewire', 'contact', 'terminal',
+  'minesweeper', 'doom', 'limewire', 'contact', 'terminal',
   'recyclebin',
 ];
 

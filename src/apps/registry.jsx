@@ -18,6 +18,7 @@ import Notepad from './Notepad/Notepad';
 import Paint from './Paint/Paint';
 import Terminal from './Terminal/Terminal';
 import RecycleBin from './RecycleBin/RecycleBin';
+import Doom from './Doom/Doom';
 
 const ChromeIcon = () => (
   <img src="/assets/chrome.png" alt="Chrome" width="32" height="32" style={{ objectFit: 'contain' }} draggable={false} />
@@ -27,60 +28,21 @@ const MSNIcon = () => (
   <img src="/assets/msn-logo.png" alt="MSN" width="32" height="32" style={{ objectFit: 'contain' }} draggable={false} />
 );
 
-const MediaPlayerIcon = () => (
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none">
-    <rect x="3" y="4" width="26" height="24" rx="3" fill="#1C1C2E"/>
-    <circle cx="16" cy="14" r="7" fill="none" stroke="#4A9BD9" strokeWidth="1.5"/>
-    <polygon points="14,11 14,17 19,14" fill="#4A9BD9"/>
-    <rect x="6" y="24" width="20" height="2" rx="1" fill="#4A9BD9"/>
-  </svg>
-);
+const pngIcon = {
+  width: 32,
+  height: 32,
+  objectFit: 'contain',
+};
 
-const CalculatorIcon = () => (
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none">
-    <rect x="5" y="2" width="22" height="28" rx="2" fill="#ECE9D8" stroke="#808080" strokeWidth="1"/>
-    <rect x="7" y="4" width="18" height="6" fill="#9CB8A0" stroke="#808080" strokeWidth="0.5"/>
-    <rect x="8" y="12" width="4" height="4" fill="#FFF" stroke="#808080" strokeWidth="0.5"/>
-    <rect x="14" y="12" width="4" height="4" fill="#FFF" stroke="#808080" strokeWidth="0.5"/>
-    <rect x="20" y="12" width="4" height="4" fill="#D4D0C8" stroke="#808080" strokeWidth="0.5"/>
-    <rect x="8" y="18" width="4" height="4" fill="#FFF" stroke="#808080" strokeWidth="0.5"/>
-    <rect x="14" y="18" width="4" height="4" fill="#FFF" stroke="#808080" strokeWidth="0.5"/>
-    <rect x="20" y="18" width="4" height="4" fill="#D4D0C8" stroke="#808080" strokeWidth="0.5"/>
-    <rect x="8" y="24" width="10" height="4" fill="#FFF" stroke="#808080" strokeWidth="0.5"/>
-    <rect x="20" y="24" width="4" height="4" fill="#316AC5" stroke="#808080" strokeWidth="0.5"/>
-  </svg>
-);
+function AppIcon({ src, alt }) {
+  return <img src={src} alt={alt} width={32} height={32} draggable={false} style={pngIcon} />;
+}
 
-const MinesweeperIcon = () => (
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none">
-    <rect x="2" y="2" width="28" height="28" rx="2" fill="#C0C0C0" stroke="#808080" strokeWidth="1"/>
-    <circle cx="16" cy="16" r="6" fill="#333"/>
-    <line x1="16" y1="6" x2="16" y2="10" stroke="#333" strokeWidth="2"/>
-    <line x1="16" y1="22" x2="16" y2="26" stroke="#333" strokeWidth="2"/>
-    <line x1="6" y1="16" x2="10" y2="16" stroke="#333" strokeWidth="2"/>
-    <line x1="22" y1="16" x2="26" y2="16" stroke="#333" strokeWidth="2"/>
-    <circle cx="16" cy="16" r="2" fill="#FF0000"/>
-  </svg>
-);
-
-const LimeWireIcon = () => (
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none">
-    <circle cx="16" cy="16" r="13" fill="#7CB342"/>
-    <circle cx="16" cy="16" r="8" fill="#FFFFFF" opacity="0.3"/>
-    <text x="10" y="21" fontSize="14" fontWeight="bold" fill="#FFFFFF">🍋</text>
-  </svg>
-);
-
-const WordPadIcon = () => (
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none">
-    <rect x="4" y="2" width="24" height="28" rx="1" fill="#FFFFFF" stroke="#808080" strokeWidth="1"/>
-    <rect x="4" y="2" width="24" height="6" fill="#245EDC"/>
-    <line x1="8" y1="12" x2="24" y2="12" stroke="#000" strokeWidth="0.7"/>
-    <line x1="8" y1="16" x2="24" y2="16" stroke="#000" strokeWidth="0.7"/>
-    <line x1="8" y1="20" x2="24" y2="20" stroke="#000" strokeWidth="0.7"/>
-    <line x1="8" y1="24" x2="18" y2="24" stroke="#000" strokeWidth="0.7"/>
-  </svg>
-);
+const MediaPlayerIcon = () => <AppIcon src="/assets/media-player.png" alt="Windows Media Player" />;
+const CalculatorIcon = () => <AppIcon src="/assets/calculator.png" alt="Calculadora" />;
+const MinesweeperIcon = () => <AppIcon src="/assets/minesweeper.png" alt="Campo Minado" />;
+const LimeWireIcon = () => <AppIcon src="/assets/limewire.png" alt="LimeWire" />;
+const WordPadIcon = () => <AppIcon src="/assets/wordpad.png" alt="WordPad" />;
 
 const ExplorerIcon = () => (
   <img src="/assets/win-explorer.png" alt="Explorer" width="32" height="32" style={{ objectFit: 'contain', transform: 'scale(1.4)' }} draggable={false} />
@@ -102,16 +64,8 @@ const RecycleBinIcon = () => (
   <img src="/assets/recycle-bin.png" alt="Lixeira" width="32" height="32" style={{ objectFit: 'contain' }} draggable={false} />
 );
 
-const VirusBatIcon = () => (
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none">
-    <rect x="4" y="2" width="24" height="28" fill="#FFFFFF" stroke="#808080" strokeWidth="1"/>
-    <rect x="4" y="2" width="24" height="5" fill="#0C0C0C"/>
-    <text x="6" y="6" fontSize="4" fill="#00FF00" fontFamily="monospace">BAT</text>
-    <text x="8" y="14" fontSize="5" fill="#FF0000" fontWeight="bold">⚠</text>
-    <text x="8" y="20" fontSize="3" fill="#333" fontFamily="monospace">virus</text>
-    <text x="8" y="24" fontSize="3" fill="#333" fontFamily="monospace">.bat</text>
-  </svg>
-);
+const DoomIcon = () => <AppIcon src="/assets/doom.png" alt="DOOM" />;
+const VirusBatIcon = () => <AppIcon src="/assets/setup.png" alt="Instalador do Minecraft" />;
 
 export const appRegistry = [
   {
@@ -188,9 +142,9 @@ export const appRegistry = [
   },
   {
     id: 'virusbat',
-    label: 'virus.bat',
-    title: 'virus.bat',
-    description: '⚠ Não execute!',
+    label: 'Minecraft_setup.exe',
+    title: 'Minecraft_setup.exe',
+    description: 'Instalador do Minecraft',
     icon: <VirusBatIcon />,
     component: null,
     defaultSize: { width: 400, height: 300 },
@@ -230,6 +184,15 @@ export const appRegistry = [
     icon: <CalculatorIcon />,
     component: <Calculator />,
     defaultSize: { width: 260, height: 310 },
+  },
+  {
+    id: 'doom',
+    label: 'DOOM',
+    title: 'DOOM.EXE',
+    description: 'Episódio shareware',
+    icon: <DoomIcon />,
+    component: <Doom />,
+    defaultSize: { width: 720, height: 520 },
   },
   {
     id: 'minesweeper',

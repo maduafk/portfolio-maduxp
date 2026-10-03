@@ -20,13 +20,16 @@ querendo estágio. Fiz um de infra que me ensinou muito sobre
 redes antes mesmo de ter a disciplina na faculdade.
 
 6 meses depois passei no processo seletivo da OObj, uma empresa
-de gestão fiscal. Depois de mais 6 meses a empresa foi comprada
-pela Avalara, uma multinacional. Foi lá que eu evoluí muito:
-melhorei meu Java, aprendi Docker, WSL, banco de dados, Jira,
-GitLab CI/CD e de quebra melhorei muito meu inglês.
+de gestão fiscal. Fiquei de julho a dezembro de 2024, em sistemas
+de NFe, APIs REST e banco de dados.
 
-Meu estágio na Avalara acaba em maio de 2026 e já to procurando
-nova oportunidade. Me sinto preparada pra uma vaga júnior!
+A empresa foi comprada pela Avalara e eu continuei o estágio lá,
+de dezembro de 2024 até julho de 2026. Foi onde eu mais evoluí:
+Java, APIs, interfaces com Angular, Docker, Jira, testes e inglês
+no dia a dia.
+
+O estágio acabou em julho de 2026. Agora to procurando uma vaga
+júnior. Me sinto preparada pra essa próxima etapa!
 
 === Por que Windows XP? ===
 
@@ -48,8 +51,10 @@ de quem eu sou hoje. Esse portfolio é uma homenagem a essa
 
 === Contato ===
 Email:    softwaremadu@gmail.com
+Celular:  (62) 99240-7797
+Site:     maduviana.com.br
 GitHub:   github.com/maduafk
-LinkedIn: www.linkedin.com/in/madu-viana
+LinkedIn: linkedin.com/in/madu-viana
 
 ---
 Feito com React, Vite e muita nostalgia do Windows XP ♡`;

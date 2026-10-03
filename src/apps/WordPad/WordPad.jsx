@@ -5,46 +5,53 @@ function buildInitialCvHtml(s) {
   return `
 <div class="${s.cvHeader}">
   <h1>Maria Eduarda Silva Viana</h1>
-  <p>Goiânia - GO · softwaremadu@gmail.com</p>
-  <p>github.com/maduafk · www.linkedin.com/in/madu-viana</p>
+  <p>Desenvolvedora Java Júnior · Goiânia - GO</p>
+  <p>softwaremadu@gmail.com · (62) 99240-7797</p>
+  <p>maduviana.com.br · github.com/maduafk · linkedin.com/in/madu-viana</p>
 </div>
 
 <div class="${s.cvSection}">
-  <h2>Objetivo</h2>
-  <p>Desenvolvedora de Software Júnior com experiência em sistemas de alta disponibilidade, APIs REST, bancos de dados relacionais e serviços em nuvem. Busco contribuir em equipes de desenvolvimento, aprendendo e entregando soluções de qualidade.</p>
+  <h2>Perfil</h2>
+  <p>Desenvolvedora de Software com experiência em sistemas em produção, APIs REST, correção de bugs e bancos de dados relacionais. Java e Spring Boot aplicados em projetos, testes unitários, Docker e integração de serviços. Busco uma vaga júnior.</p>
 </div>
 
 <div class="${s.cvSection}">
   <h2>Formação Acadêmica</h2>
   <div class="${s.cvEntry}">
-    <strong>Engenharia de Software</strong> <span class="${s.cvDate}">2023 – 2026</span>
-    <p>Faculdade Alfredo Nasser — Goiânia, GO</p>
+    <strong>Engenharia de Software</strong> <span class="${s.cvDate}">2023 – dez/2026</span>
+    <p>Faculdade Alfredo Nasser — Goiânia, GO. Presencial, período noturno.</p>
   </div>
 </div>
 
 <div class="${s.cvSection}">
   <h2>Experiência Profissional</h2>
   <div class="${s.cvEntry}">
-    <strong>Oobj – Avalara</strong> <span class="${s.cvDate}">Jul/2024 – Mai/2026</span>
-    <p class="${s.cvRole}">Estagiária de Engenharia de Software — Remoto</p>
+    <strong>Avalara</strong> <span class="${s.cvDate}">Dez/2024 – Jul/2026</span>
+    <p class="${s.cvRole}">Estagiária de Engenharia de Software — Remoto (concluído)</p>
     <ul>
-      <li>Manutenção e evolução de sistema de emissão de documentos fiscais eletrônicos (NFe, NFCe, CT-e, MDFe) com processamento de milhares de documentos/dia</li>
-      <li>Otimização de queries em PostgreSQL e Oracle para relatórios fiscais (JasperReports)</li>
-      <li>Desenvolvimento e ajuste de APIs REST consumidas por clientes enterprise</li>
-      <li>Integração com webservices da SEFAZ, tratamento de retornos e conformidade fiscal</li>
-      <li>Processamento assíncrono de eventos com JMS/ActiveMQ em alta volumetria</li>
-      <li>Utilização de AWS (S3, SQS, SES) e Docker em ambiente de produção</li>
-      <li>Cobertura de testes com JUnit e análise de qualidade via SonarQube</li>
-      <li>Leitura e interpretação de documentação técnica em inglês como rotina</li>
+      <li>Atuação em sistemas em produção, com correção de bugs críticos e melhorias contínuas</li>
+      <li>Desenvolvimento e evolução de APIs REST para integração com serviços externos</li>
+      <li>Interfaces web com Angular e JavaScript</li>
+      <li>Testes unitários, Docker e acompanhamento de tarefas no Jira</li>
+    </ul>
+  </div>
+  <div class="${s.cvEntry}">
+    <strong>Oobj</strong> <span class="${s.cvDate}">Jul/2024 – Dez/2024</span>
+    <p class="${s.cvRole}">Estagiária de Engenharia de Software — Remoto (concluído)</p>
+    <ul>
+      <li>Desenvolvimento e manutenção de sistemas fiscais (NFe, NFCe, CT-e e MDFe)</li>
+      <li>Implementação e consumo de APIs REST</li>
+      <li>Correção de bugs e análise de falhas em produção</li>
+      <li>Escrita e otimização de queries em PostgreSQL e Oracle, com uso de Docker</li>
     </ul>
   </div>
   <div class="${s.cvEntry}">
     <strong>SIGEP — Sistema Integrado de Gestão Pública</strong> <span class="${s.cvDate}">Jan/2024 – Jul/2024</span>
-    <p class="${s.cvRole}">Estagiária de Infraestrutura de TI — Presencial</p>
+    <p class="${s.cvRole}">Estagiária de Infraestrutura de TI — Presencial (concluído)</p>
     <ul>
-      <li>Suporte e manutenção de servidores e infraestrutura de rede</li>
-      <li>Monitoramento de segurança e disponibilidade de sistemas</li>
-      <li>Suporte técnico à equipe, contribuindo para redução de chamados recorrentes</li>
+      <li>Suporte em servidores e redes</li>
+      <li>Backup e manutenção de banco de dados</li>
+      <li>Monitoramento de segurança</li>
     </ul>
   </div>
 </div>
@@ -52,33 +59,27 @@ function buildInitialCvHtml(s) {
 <div class="${s.cvSection}">
   <h2>Projetos</h2>
   <div class="${s.cvEntry}">
-    <strong>Portfólio Madu</strong> <span class="${s.cvDate}">2026</span>
-    <p>Portfólio interativo com tema fiel ao Windows XP. Simula BIOS, boot, login e desktop com 15+ aplicações funcionais. React 19, Vite, CSS Modules.</p>
+    <strong>Portfólio Interativo</strong> <span class="${s.cvDate}">maduviana.com.br</span>
+    <p>Inspirado no Windows XP, com componentes, Context API e custom hooks. React, JavaScript, Vite e CSS Modules.</p>
   </div>
   <div class="${s.cvEntry}">
-    <strong>API REST — TypeScript</strong> <span class="${s.cvDate}">2025</span>
-    <p>Backend com Node.js, TypeScript e Express. Rotas, validações, controllers e persistência com PostgreSQL.</p>
+    <strong>API REST — Java</strong> <span class="${s.cvDate}">Acadêmico</span>
+    <p>API RESTful com autenticação, CRUD completo e banco de dados. Java, Spring Boot e SQL.</p>
   </div>
   <div class="${s.cvEntry}">
-    <strong>App Android — Gerenciamento de Estudos</strong> <span class="${s.cvDate}">2025</span>
-    <p>Aplicativo mobile com Kotlin, Firebase e Android Studio.</p>
-  </div>
-  <div class="${s.cvEntry}">
-    <strong>API REST — Java</strong> <span class="${s.cvDate}">2024</span>
-    <p>API RESTful com autenticação, CRUD completo e banco de dados. Java, Spring Boot, SQL.</p>
+    <strong>API — TypeScript</strong> <span class="${s.cvDate}">Acadêmico</span>
+    <p>Backend com Node.js e TypeScript. Rotas, validações, controllers e persistência em PostgreSQL.</p>
   </div>
 </div>
 
 <div class="${s.cvSection}">
   <h2>Habilidades Técnicas</h2>
-  <p><strong>Backend:</strong> Java, Spring Boot, APIs REST, Node.js, TypeScript, Express</p>
-  <p><strong>Frontend:</strong> React, JavaScript, HTML5, CSS3</p>
-  <p><strong>Banco de Dados:</strong> PostgreSQL, Oracle, SQL</p>
-  <p><strong>DevOps & Cloud:</strong> Docker, Git, AWS (S3, SQS, SES)</p>
-  <p><strong>Testes:</strong> JUnit, SonarQube</p>
-  <p><strong>Mensageria:</strong> JMS, ActiveMQ</p>
-  <p><strong>Mobile:</strong> Kotlin, Firebase, Android Studio</p>
-  <p><strong>Idiomas:</strong> Inglês — Intermediário Alto (B2)</p>
+  <p><strong>Java e backend:</strong> Java, Spring Boot, APIs REST, JUnit</p>
+  <p><strong>Integração:</strong> Node.js, TypeScript, JMS, ActiveMQ</p>
+  <p><strong>Banco de dados:</strong> PostgreSQL, Oracle, SQL</p>
+  <p><strong>Frontend:</strong> Angular, React, JavaScript</p>
+  <p><strong>Ferramentas:</strong> Git, Docker, Jira, SonarQube</p>
+  <p><strong>Idiomas:</strong> Inglês intermediário-avançado (leitura técnica e comunicação)</p>
 </div>
 
 <div class="${s.cvSection}">

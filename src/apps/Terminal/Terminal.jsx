@@ -22,11 +22,11 @@ Comandos disponíveis:
 ╠═══════════════════════════════════════════╣
 ║  Nome:      Maria Eduarda Silva Viana     ║
 ║  Nick:      madugamer0412                 ║
-║  Cargo:     Dev Software Júnior           ║
+║  Cargo:     Dev Java Júnior               ║
 ║  Local:     Goiânia - GO, Brasil          ║
-║  Formação:  Eng. de Software (formando 2026) ║
+║  Formação:  Eng. Software (dez/2026)      ║
 ║  Faculdade: Faculdade Alfredo Nasser        ║
-║  Idiomas:   PT (nativo), EN (B2)          ║
+║  Idiomas:   PT (nativo), EN (int-avanç.)  ║
 ╚═══════════════════════════════════════════╝`,
 
   skills: () => `
@@ -38,6 +38,7 @@ Backend:   Java        ████████░░ 80%
            Node.js     ██████░░░░ 65%
            TypeScript  ██████░░░░ 60%
 Frontend:  JavaScript  ███████░░░ 75%
+           Angular     ██████░░░░ 65%
            React       ██████░░░░ 65%
            HTML/CSS    ████████░░ 80%
 Banco:     SQL         ████████░░ 80%
@@ -45,18 +46,17 @@ Banco:     SQL         ████████░░ 80%
            Oracle      ██████░░░░ 65%
 DevOps:    Git         ████████░░ 85%
            Docker      ██████░░░░ 65%
-           AWS         █████░░░░░ 55%
-IA:        Cursor AI   ████████░░ 85%
-           Amazon Q    ███████░░░ 70%`,
+           Jira        ██████░░░░ 60%
+IA:        Cursor      ████████░░ 85%`,
 
   projects: () => `
 [PROJETOS]
 ━━━━━━━━━
 1. Portfolio Madu           - React / Vite (este!)
-2. API REST - TypeScript   - Node.js / Express / PostgreSQL
-3. App Android - Estudos   - Kotlin / Firebase
-4. API REST - Java         - Spring Boot / SQL
-5. Colaborações Avalara    - Java / Avalara (corporativo)
+2. API REST - Java         - Spring Boot / SQL
+3. API - TypeScript        - Node.js / PostgreSQL
+4. Avalara                 - estágio encerrado em 07/2026
+5. Oobj                    - estágio encerrado em 12/2024
 
 Use "start [número]" para mais detalhes.`,
 
@@ -64,8 +64,10 @@ Use "start [número]" para mais detalhes.`,
 [CONTATO]
 ━━━━━━━━
 Email:    softwaremadu@gmail.com
+Celular:  (62) 99240-7797
+Site:     maduviana.com.br
 GitHub:   github.com/maduafk
-LinkedIn: www.linkedin.com/in/madu-viana
+LinkedIn: linkedin.com/in/madu-viana
 
 Fique à vontade para entrar em contato! :)`,
 
@@ -79,17 +81,20 @@ LinkedIn: https://www.linkedin.com/in/madu-viana/`,
 [EXPERIÊNCIA PROFISSIONAL]
 ━━━━━━━━━━━━━━━━━━━━━━━━━
 
-> Oobj – Avalara | Home Office (07/2024 - 05/2026)
-  Engenharia de Software
-  • Sistema de documentos fiscais (NFe, NFCe, CT-e, MDFe)
-  • APIs REST, PostgreSQL, Oracle
-  • AWS (S3, SQS, SES), Docker, JMS/ActiveMQ
-  • Testes JUnit, SonarQube
-  • IA: Cursor AI e Amazon Q
+> Avalara | Remoto (12/2024 - 07/2026) — concluído
+  Estágio em Engenharia de Software
+  • Sistemas em produção, bugs críticos e melhorias
+  • APIs REST e interfaces com Angular e JavaScript
+  • Testes unitários, Docker e Jira
 
-> SIGEP | Presencial (01/2024 – 07/2024)
+> Oobj | Remoto (07/2024 - 12/2024) — concluído
+  Estágio em Engenharia de Software
+  • Sistemas fiscais (NFe, NFCe, CT-e, MDFe)
+  • APIs REST, PostgreSQL, Oracle e Docker
+
+> SIGEP | Presencial (01/2024 - 07/2024) — concluído
   Estágio em Infraestrutura de TI
-  • Suporte em servidores e redes
+  • Servidores, redes, backup e banco de dados
   • Monitoramento de segurança`,
 
   date: () => `Data: ${new Date().toLocaleDateString('pt-BR')} | Hora: ${new Date().toLocaleTimeString('pt-BR')}`,
@@ -109,34 +114,33 @@ Descrição: Portfolio temático Windows XP com BIOS, boot,
 Destaque:  UI 100% fiel ao Windows XP original.
 GitHub:    github.com/maduafk`,
   2: `
-[Projeto 2] API REST - TypeScript
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Stack:     Node.js, TypeScript, Express, PostgreSQL
-Descrição: Serviço backend com rotas, validações,
-           controllers e persistência de dados.
-Destaque:  Projeto acadêmico (2025)`,
-  3: `
-[Projeto 3] App Android - Estudos
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Stack:     Kotlin, Firebase, Android Studio
-Descrição: App mobile para organização de atividades
-           e acompanhamento de rotina de estudos.
-Destaque:  Telas, navegação e armazenamento local.`,
-  4: `
-[Projeto 4] API REST - Java
+[Projeto 2] API REST - Java
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Stack:     Java, Spring Boot, SQL
 Descrição: API RESTful com autenticação, CRUD completo
            e conexão com banco de dados.
-Destaque:  Arquitetura limpa e organização por camadas.`,
-  5: `
-[Projeto 5] Colaborações Avalara
+Destaque:  Projeto acadêmico.`,
+  3: `
+[Projeto 3] API - TypeScript
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Stack:     Node.js, TypeScript, PostgreSQL
+Descrição: Backend com rotas, validações, controllers
+           e persistência de dados.
+Destaque:  Projeto acadêmico.`,
+  4: `
+[Projeto 4] Avalara
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Stack:     Java, PostgreSQL, Oracle, AWS, Docker
-Descrição: Colaborações em sistemas de gestão fiscal,
-           emissão de documentos eletrônicos e integrações.
-Destaque:  Integração SEFAZ, mensageria, produção.
-Obs:       Projeto corporativo — código privado.`,
+Stack:     Java, Angular, JavaScript, Docker, Jira
+Descrição: APIs REST, interfaces web e correção de
+           bugs em sistemas em produção.
+Obs:       Estágio concluído em jul/2026. Código privado.`,
+  5: `
+[Projeto 5] Oobj
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Stack:     Java, PostgreSQL, Oracle, Docker
+Descrição: Sistemas fiscais (NFe, NFCe, CT-e, MDFe),
+           APIs REST e queries em produção.
+Obs:       Estágio concluído em dez/2024. Código privado.`,
 };
 
 export default function Terminal() {

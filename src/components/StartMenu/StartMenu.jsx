@@ -3,7 +3,7 @@ import { appRegistry } from '../../apps/registry';
 import styles from './StartMenu.module.css';
 
 const pinnedApps = ['chrome', 'contact', 'mediaplayer', 'msn', 'explorer'];
-const allProgramsApps = ['chrome', 'contact', 'msn', 'notepad-empty', 'paint', 'mediaplayer', 'calculator', 'minesweeper', 'limewire', 'terminal', 'wordpad'];
+const allProgramsApps = ['chrome', 'contact', 'msn', 'notepad-empty', 'paint', 'mediaplayer', 'calculator', 'minesweeper', 'doom', 'limewire', 'terminal', 'wordpad'];
 
 export default function StartMenu({ onOpenApp, onClose, onShutdown }) {
   const menuRef = useRef(null);

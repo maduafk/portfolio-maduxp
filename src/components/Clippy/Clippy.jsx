@@ -4,10 +4,10 @@ import styles from './Clippy.module.css';
 const tips = [
   'Oi! Eu sou o Clippy! A Madu me pediu pra te ajudar por aqui',
   'Dica: dê dois cliques nos ícones do desktop pra abrir os apps!',
-  'Sabia que a Madu já trabalhou com Java e APIs REST em sistema fiscal?',
+  'Sabia que a Madu já trabalhou com Java, Angular e APIs REST?',
   'Tente abrir o Prompt de Comando e digitar "about" ou "skills"!',
   'O MSN tem histórico de conversas! Vai lá conferir',
-  'A Madu tá cursando Eng. de Software na Faculdade Alfredo Nasser!',
+  'A Madu tá cursando Eng. de Software e se forma em dezembro de 2026!',
   'Abra o Paint e desenhe algo! Ou o Minesweeper pra relaxar',
   'Parece que você está explorando o portfolio. Quer uma dica? Clique com botão direito no desktop!',
 ];

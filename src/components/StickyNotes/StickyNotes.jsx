@@ -5,7 +5,7 @@ const initialNotes = [
   {
     id: 1,
     title: 'WIFI',
-    content: 'Rede: VIANA_5G\nSenha: viana2002\n',
+    content: 'Rede: VIANA\nSenha: viana2002\n',
     color: '#FFFFAA',
     x: window.innerWidth - 200,
     y: 80,
@@ -21,7 +21,7 @@ const initialNotes = [
   {
     id: 3,
     title: 'NÃO ESQUECEEEER',
-    content: '☐ Estudar pra prova de quinta\n☐ Baixar DOOM na torradeira nova\n☐ Colocar novas musicas no pendrive do pai\n☑ Criar portfolio massa\n☐ Dormir antes das 3h',
+    content: '☐ Estudar pra prova de quinta\n☑ Baixar DOOM na torradeira nova\n☐ Colocar novas musicas no pendrive do pai\n☑ Criar portfolio massa\n☐ Dormir antes das 3h',
     color: '#DDAAFF',
     x: window.innerWidth - 220,
     y: 440,

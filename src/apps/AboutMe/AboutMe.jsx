@@ -56,26 +56,26 @@ export default function AboutMe() {
               />
               <div className={styles.brand}>
                 <small>Maria Eduarda Silva Viana</small>
-                <span className={styles.winLabel}>Desenvolvedora<em> Jr</em></span>
+                <span className={styles.winLabel}>Dev Java<em> Jr</em></span>
                 <small>Engenharia de Software</small>
               </div>
             </div>
             <hr />
             <div className={styles.info}>
               <p><strong>Maria Eduarda Silva Viana</strong></p>
-              <p>Desenvolvedora de Software Júnior</p>
+              <p>Desenvolvedora Java Júnior</p>
               <br />
-              <p>Portfolio v1.0 — madugamer0412</p>
-              <p>Build 2026.03.29</p>
+              <p>Portfolio v1.1 — madugamer0412</p>
+              <p>Build 2026.10.03</p>
             </div>
           </div>
 
           <fieldset>
             <legend>Sobre Mim</legend>
             <p style={{marginBottom: 8}}>
-              Desenvolvedora Backend Java com experiência em sistema fiscal de alta disponibilidade.
-              Experiência prática com APIs REST, PostgreSQL, Oracle, AWS e mensageria.
-              Sempre buscando aprender e entregar código de qualidade.
+              Desenvolvedora de Software com experiência em sistemas em produção, APIs REST,
+              correção de bugs e bancos relacionais. Java e Spring Boot em projetos, testes
+              unitários, Docker e integração de serviços. Disponível para vaga júnior.
             </p>
             <div className="field-row">
               <label style={{width: 90}}>Localização:</label>
@@ -83,15 +83,23 @@ export default function AboutMe() {
             </div>
             <div className="field-row">
               <label style={{width: 90}}>Formação:</label>
-              <span>Engenharia de Software — Faculdade Alfredo Nasser (2023 - 2026)</span>
+              <span>Eng. de Software — Faculdade Alfredo Nasser (2023 – dez/2026)</span>
             </div>
             <div className="field-row">
               <label style={{width: 90}}>E-mail:</label>
               <span>softwaremadu@gmail.com</span>
             </div>
             <div className="field-row">
+              <label style={{width: 90}}>Celular:</label>
+              <span>(62) 99240-7797</span>
+            </div>
+            <div className="field-row">
+              <label style={{width: 90}}>Site:</label>
+              <span>maduviana.com.br</span>
+            </div>
+            <div className="field-row">
               <label style={{width: 90}}>Idiomas:</label>
-              <span>Português (nativo), Inglês B2 (leitura técnica diária)</span>
+              <span>Português (nativo), Inglês intermediário-avançado</span>
             </div>
           </fieldset>
         </article>
@@ -102,26 +110,31 @@ export default function AboutMe() {
           aria-labelledby="tab-trigger-hardware"
         >
           <fieldset>
-            <legend>Oobj – Avalara (07/2024 - 05/2026)</legend>
-            <p style={{ fontSize: 11, marginBottom: 6 }}>Estágio em Engenharia de Software — Home Office</p>
+            <legend>Avalara (12/2024 – 07/2026)</legend>
+            <p style={{ fontSize: 11, marginBottom: 6 }}>Estágio em Engenharia de Software — Remoto · Concluído</p>
             <ul style={{ fontSize: 11, margin: 0, paddingLeft: 16, lineHeight: 1.6 }}>
-              <li>Sistema crítico de emissão de documentos fiscais (NFe, NFCe, CT-e, MDFe) — milhares de docs/dia</li>
-              <li>Otimização de queries PostgreSQL/Oracle em relatórios fiscais (JasperReports)</li>
-              <li>APIs REST consumidas por clientes enterprise</li>
-              <li>Integração direta com SEFAZ e webservices governamentais</li>
-              <li>Mensageria JMS/ActiveMQ em ambiente de alta volumetria</li>
-              <li>AWS (S3, SQS, SES) e Docker em ambiente de desenvolvimento</li>
-              <li>Testes JUnit + SonarQube para qualidade de código</li>
-              <li>Produtividade com Cursor AI e Amazon Q (debugging e code review diários)</li>
+              <li>Sistemas em produção: correção de bugs críticos e melhorias contínuas</li>
+              <li>APIs REST para integração com serviços externos</li>
+              <li>Interfaces web com Angular e JavaScript</li>
+              <li>Testes unitários, Docker e acompanhamento das entregas no Jira</li>
+            </ul>
+          </fieldset>
+          <fieldset style={{ marginTop: 8 }}>
+            <legend>Oobj (07/2024 – 12/2024)</legend>
+            <p style={{ fontSize: 11, marginBottom: 6 }}>Estágio em Engenharia de Software — Remoto · Concluído</p>
+            <ul style={{ fontSize: 11, margin: 0, paddingLeft: 16, lineHeight: 1.6 }}>
+              <li>Sistemas fiscais (NFe, NFCe, CT-e e MDFe) e consumo de APIs REST</li>
+              <li>Correção de bugs e análise de falhas em produção</li>
+              <li>Queries em PostgreSQL e Oracle, com uso de Docker</li>
             </ul>
           </fieldset>
           <fieldset style={{ marginTop: 8 }}>
             <legend>SIGEP (01/2024 – 07/2024)</legend>
-            <p style={{ fontSize: 11, marginBottom: 6 }}>Estágio em Infraestrutura de TI — Presencial</p>
+            <p style={{ fontSize: 11, marginBottom: 6 }}>Estágio em Infraestrutura de TI — Presencial · Concluído</p>
             <ul style={{ fontSize: 11, margin: 0, paddingLeft: 16, lineHeight: 1.6 }}>
-              <li>Suporte e manutenção de servidores e infraestrutura de rede</li>
-              <li>Monitoramento de segurança e disponibilidade</li>
-              <li>Contribuição para redução de chamados recorrentes</li>
+              <li>Suporte em servidores e redes</li>
+              <li>Backup e manutenção de banco de dados</li>
+              <li>Monitoramento de segurança</li>
             </ul>
           </fieldset>
         </article>
@@ -143,7 +156,7 @@ export default function AboutMe() {
             </div>
             <div className="field-row">
               <label style={{ width: 90, fontSize: 11 }}>Período:</label>
-              <span style={{ fontSize: 11 }}>2023 — Atualmente (noturno)</span>
+              <span style={{ fontSize: 11 }}>2023 — dez/2026 (presencial, noturno)</span>
             </div>
           </fieldset>
           <fieldset style={{ marginTop: 8 }}>
@@ -157,10 +170,9 @@ export default function AboutMe() {
           <fieldset style={{ marginTop: 8 }}>
             <legend>Destaques</legend>
             <ul style={{ fontSize: 11, margin: 0, paddingLeft: 16, lineHeight: 1.6 }}>
-              <li>Portfólio Madu — React 19, 15+ apps funcionais, Canvas API, drag-and-drop</li>
-              <li>Otimização de relatórios fiscais com impacto direto em produção</li>
-              <li>Evolução para atuação autônoma em tarefas de backend e integração</li>
-              <li>Documentação técnica que facilita onboarding de novos membros</li>
+              <li>Portfólio Madu — React, Context API, custom hooks e CSS Modules</li>
+              <li>APIs REST em Java (Spring Boot) e em TypeScript (Node.js, PostgreSQL)</li>
+              <li>Atuação em produção: bugs críticos, integrações e interfaces em Angular</li>
             </ul>
           </fieldset>
           <fieldset style={{ marginTop: 8 }}>
