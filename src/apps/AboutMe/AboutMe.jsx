@@ -201,10 +201,10 @@ export default function AboutMe() {
         </article>
 
         <div className="field-row" style={{ justifyContent: 'flex-end', marginTop: 8 }}>
-          <button type="button" onClick={() => window.open('https://www.linkedin.com/in/madu-viana/', '_blank')}>
+          <button type="button" onClick={() => window.open('https://www.linkedin.com/in/madu-viana/', '_blank', 'noopener,noreferrer')}>
             LinkedIn
           </button>
-          <button type="button" onClick={() => window.open('https://github.com/maduafk', '_blank')}>
+          <button type="button" onClick={() => window.open('https://github.com/maduafk', '_blank', 'noopener,noreferrer')}>
             GitHub
           </button>
           <button type="button" onClick={() => setToast('Obrigada por visitar meu portfolio! 💜')}>
